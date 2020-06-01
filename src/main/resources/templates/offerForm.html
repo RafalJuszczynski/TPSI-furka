@@ -74,7 +74,7 @@
                     <label class="col-sm-2 control-label">Rodzaj paliwa:</label>
                     <div class="col-sm-4" th:classappend="${#fields.hasErrors('*{fuelType.id}')?'has-error':''}">
                         <select th:field="*{fuelType.id}" class="form-control">
-                            <option th:each="bs : ${fuelTypes}" th:value="${bs.id}" th:text="${bs.name}"></option>-->
+                            <option th:each="bs : ${fuelTypes}" th:value="${bs.id}" th:text="${bs.name}"></option>
                         </select>
                         <span th:if="${#fields.hasErrors('*{fuelType.id}')}">Nie może być puste</span>
                     </div>
